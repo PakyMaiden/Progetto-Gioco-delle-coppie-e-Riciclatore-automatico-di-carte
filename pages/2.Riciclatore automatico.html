@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relazione</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body bgcolor="56678c">
+
+    <img src="../images/logo.png" width="130" height="130" border="2" align="left">
+    <img src="../images/logo.png" width="130" height="130" border="2" align="right">
+
+    <font color="000000" face="arial">
+        <h2 align="center">2.Riciclatore automatico</h2>
+    </font>
+
+    <font color="000000" face="arial" size="5">
+        <p align="center"><a href="../index.html" title="torna a index"><b>Torna nella Home</b></a></p>
+    </font>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <font color="000000" face="arial" size="5">
+        Traccia
+        <br>
+
+        <blockquote>
+            <p>"Si vuole simulare la gestione di un riciclatore automatico. Si suppone di avere 5 tipi di
+                prodotti da poter riciclare. Ogni prodotto è identificato da un nome, da un codice
+                identificativo del tipo di prodotto (vetro, plastica, carta, ecc..) e dal prezzo di riciclo. Il
+                sistema ha disposizione un budget iniziale (scelto dall’utente all’inizio del programma)
+                da cui prendere i soldi per i prodotti da riciclare.
+                Permettere all’utente di: <br><br>
+                • Inserire un prodotto <br>
+                o Verificare se ci sono abbastanza soldi per smaltire il prodotto. Se il
+                budget è sufficiente provvedere allo smaltimento del prodotto.<br>
+                o Verificare se è possibile inserire il prodotto dato che il massimo
+                numero di prodotti per un singolo tipo è 20. <br> <br>
+                • A fine settimana visualizzare l’elenco in ordine decrescente dei prodotti
+                riciclati per ogni categoria. <br><br>
+                Provvedere all’implementazione dell’algoritmo per la simulazione del distributore.
+                Effettuare almeno un test per ognuna delle opzioni richieste dall’utente."
+            </p>
+        </blockquote>
+    </font>
+
+
+    <br>
+    <font color="000000" face="arial" size="5">librerira.h</font>
+    <br>
+    <iframe src="../C/2.Riciclatore automatico/libreria.h " width="1200" height="300"></iframe>
+    <br><br>
+
+
+    <font color="000000" face="arial" size="5">librerira.c</font>
+    <br>
+    <iframe src="../C/2.Riciclatore automatico/libreria.c" width="1200" height="300"></iframe>
+    <br><br>
+
+
+    <font color="000000" face="arial" size="5">main.c</font>
+    <br>
+    <iframe src="../C/2.Riciclatore automatico/main.c " width="1200" height="300"></iframe>
+    <br><br>
+
+
+    <font color="000000" face="arial" size="5">output</font>
+    <br>
+
+    <div class="box"  align="center">
+
+        <code>
+            <font color="white" size="4">
+                <br>
+                1) Vediamo la lista di podotti da riciclare, con codice di appartenenza, costo per riciclare, lo spazio disponibile e l'utente inserisce nel sistema il budget per poter riciclare prodotti <br><br>
+                <img src="../images/2.Riciclatore automatico/1.PNG" border="1" align="middle">
+
+                <br><br>
+                2) Chiaramente non è possibile inserire un budget inferiore o uguale a 0 e quindi l'utente inserisce 50€ <br><br>
+                <img src="../images/2.Riciclatore automatico/2.PNG" border="1" align="middle">
+
+                <br><br>
+                3) L'utente sceglie di smaltire l'olio, può anche smaltire altri prodotti e Chiaramente lo spazio a disposizione va a diminuire  <br><br>
+                <img src="../images/2.Riciclatore automatico/3.PNG" border="1" align="middle">
+
+                <br><br>
+                4) A fine settimana ci sara' il report di spazi dei prodotti ancora disponibili  <br><br>
+                <img src="../images/2.Riciclatore automatico/4.PNG" border="1" align="middle">
+
+                <br><br>
+                5) Il sistema tiene conto se il costo è superiore al budget del sistema inserito e quindi reinserire il budget   <br><br>
+                <img src="../images/2.Riciclatore automatico/5.PNG" border="1" align="middle">
+
+                <br><br>
+                6) Nel caso in cui rimangono meno spazi disponibili rispetto ad altri prodotti, ad esempio a 13, si provvede a liberare lo spazio a 20  <br><br>
+                <img src="../images/2.Riciclatore automatico/6.PNG" border="1" align="middle">
+            </font>
+        </code>  
+
+    </div>
+
+
+    <br><br>
+    <font color="black" face="arial" size="5">
+        <p align="center"><a href="2.Riciclatore automatico.html"> <b>Torna su </b></a></p>
+    </font>
+</body>
+
+</html>

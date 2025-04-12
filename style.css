@@ -1,0 +1,10 @@
+div.box
+{
+color-scheme: dark;
+width: 1192px;; 
+height: 600px; 
+padding: 4px;
+border:2px solid white; 
+background-color: rgb(12, 12, 12);
+overflow: auto;
+}

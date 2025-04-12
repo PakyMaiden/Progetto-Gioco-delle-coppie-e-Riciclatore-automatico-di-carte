@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relazione</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body bgcolor="56678c">
+
+    <img src="../images/logo.png" width="130" height="130" border="2" align="left">
+    <img src="../images/logo.png" width="130" height="130" border="2" align="right">
+
+    <font color="000000" face="arial">
+        <h2 align="center">1.Gioco delle coppie di carte</h2>
+    </font>
+
+    <font color="000000" face="arial" size="5">
+        <p align="center"><a href="../index.html" title="torna a index"><b>Torna nella Home</b></a></p>
+    </font>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <font color="000000" face="arial" size="5">
+        Traccia
+        <br>
+
+        <blockquote>
+            <p>"Sviluppare un algoritmo per la simulazione del gioco delle coppie di carte tra due giocatori
+                identificati dai loro nomi. Inizialmente “mischiare” un mazzo di carte napoletane.
+                L'algoritmo per mischiare le carte si basa sull'idea di scambiare effettivamente a coppie
+                le carte del mazzo; una variabile in input permette di indicare quante volte si devono
+                effettuare gli scambi.
+                Viene scelto casualmente quale dei due giocatori deve iniziare il gioco. Vengono
+                “scoperte” due carte la quale posizione è indicata dal primo giocatore. Se le due carte
+                hanno lo stesso valore il giocatore si aggiudica un punto e le due carte vengono scoperte.
+                Il giocatore continua finchè non sbaglia (non trova due carte uguali) e il turno passa
+                all'altro giocatore.
+                Ad ogni turno il giocatore ha a disposizione l'elenco delle carte coperte e quelle scoperte.
+                Il gioco termina quando si scoprono tutte le carte. Il giocatore che ha totalizzato più punti
+                vince la partita.
+                Implementare il programma ed effettuare almeno 3 test.
+                Usare la function <b>rand()</b>, il cui prototipo è in <b></stdlib.h></b>, per generare a ogni passo gli
+                indici delle due
+                carte da scambiare. Nei test, partire sempre dal mazzo “ordinato” e poi visualizzare il mazzo
+                “mischiato”.
+                Si ricorda che, se <b>numero_casuale</b> è dichiarata di tipo int, allora la chiamata
+                <b>numero_casuale=rand()%(n+1);</b> genera un numero casuale intero (distribuzione
+                uniforme) nell'insieme (0,1,2,..n)."
+            </p>
+        </blockquote>
+    </font>
+
+
+    <br>
+    <font color="000000" face="arial" size="5">librerira.h</font>
+    <br>
+    <iframe src="../C/1.Gioco delle coppie di carte/libreria.h" width="1200" height="300"></iframe>
+    <br><br>
+
+
+    <font color="000000" face="arial" size="5">librerira.c</font>
+    <br>
+    <iframe src="../C/1.Gioco delle coppie di carte/libreria.c" width="1200" height="300"></iframe>
+    <br><br>
+
+
+    <font color="000000" face="arial" size="5">main.c</font>
+    <br>
+    <iframe src="../C/1.Gioco delle coppie di carte/main.c" width="1200" height="300"></iframe>
+    <br><br>
+
+
+    <font color="000000" face="arial" size="5">output</font>
+    <br>
+
+    <div class="box"  align="center">
+
+        <code>
+            <font color="white" size="4">
+            <br>
+            1) Sono inseriti i nomi dei giocatori e si sceglie quante volte mischiare il mazzo <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/1.PNG" border="1" align="middle">
+
+            <br><br>
+            2) dopo 2 secondi per mischiare il mazzo, mostra le carte scoperte e i giocatori avranno 5 secondi di tempo per osservare le carte. Scaduto il tempo, le carte saranno nascoste <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/2.PNG" border="1" align="middle">
+
+            <br><br>
+            3) Le carte sono coperte e mostra la loro posizione. [NOTE: le carte vengono "nascoste" con comando "system("cls");" che pulisce il terminale. Se il comando non funziona su altri sistemi opertivi(non Windows) utilizzare "system("clear");"]  <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/3.PNG" border="1" align="middle">
+
+            <br><br>
+            4) Il giocatore Maria sceglie le posizioni delle carte <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/4.PNG" border="1" align="middle">
+
+            <br><br>
+            5) Il giocatore Maria non ha trovato due carte uguali, quindi perde il turno, tocca al secondo giocatore Mario e sceglie le carte <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/5.PNG" border="1" align="middle">
+
+            <br><br>
+            6) Il giocatore Mario trova carte uguali, riceve un punto e ha il diritto dicontinuare finchè non pesca carte diverse <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/6.PNG" border="1" align="middle">
+
+            <br><br>
+            7) Il giocatore Mario trova carte uguali, riceve un punto e ha il diritto dicontinuare finchè non pesca carte diverse <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/7.PNG" border="1" align="middle">
+
+            <br><br>
+            8) Sarà notificato che non èpossibile pescare una carta già usata in pecedenza,e dovrà pescare un'altra carta sottostante <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/8.PNG" border="1" align="middle">
+
+            <br><br>
+            9) Il giocatore Maria ha accumulato 11 punti per prima e vince il gioco <br><br>
+            <img src="../images/1.Gioco delle coppie di carte/9.PNG" border="1" align="middle">
+        </font>
+        </code>  
+
+    </div>
+
+
+    <br><br>
+    <font color="black" face="arial" size="5">
+        <p align="center"><a href="1.Gioco delle coppie di carte.html"> <b>Torna su </b></a></p>
+    </font>
+</body>
+
+</html>
